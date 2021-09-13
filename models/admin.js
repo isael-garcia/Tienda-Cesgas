@@ -13,7 +13,7 @@ var AdminSchema = Schema({
         type: String, required:true
     },
     password: {
-        type: String, required:true
+        type: String, required:true 
     },
     telefono:{
         type:String, required: false 

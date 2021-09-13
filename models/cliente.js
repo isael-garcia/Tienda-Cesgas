@@ -15,7 +15,7 @@ var clienteSchema = Schema({
     password: {
         type: String, required:true
     },pais:{
-        type:String,  required: false 
+        type:String,  required: false  
     },
     telefono:{
         type:String, required: false 
