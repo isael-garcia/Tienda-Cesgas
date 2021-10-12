@@ -33,6 +33,7 @@ export class AdminService {
     try {
       const helper = new JwtHelperService();
       var decodedToken = helper.decodeToken(<any>token);      
+      console.log(token);
       if(!decodedToken){
         console.log('No es valido');
         localStorage.removeItem('token');
@@ -43,6 +44,6 @@ export class AdminService {
       return false;
     }
  
-    return true;
+    return allowRoles.includes(decodedToken['role']);
   }
 }
